@@ -52,3 +52,28 @@ const depthFirst = (graph,node,)=>{
 }
 
 depthFirst(graph,"a")
+
+
+
+/**
+ *  breadth firts  can be achive it with a queue
+ */
+
+
+ const breadthFirst = (graph,node,)=>{
+
+    const queue = [];
+    stack.push(node);
+    while(stack.length>0){
+        const current = stack.unshift();
+        console.log(current);
+
+        for (const neighbor of graph[current]) {
+            queue.push(neighbor)
+        }
+    }
+}
+
+breadthFirst(graph,"a");
+
+
